@@ -1,0 +1,34 @@
+{
+  "name": "dev/askspot_task_1",
+  "autoload": {
+    "classmap": [
+      "task_1/"
+    ],
+    "psr-4": {
+      "Dev\\AskspotTask1\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test:unit":"./vendor/bin/phpunit",
+    "cs:test": "phpcs --standard=phpcs.xml src/ task_1/",
+    "cs:fix": "phpcbf --standard=phpcs.xml src/ task_1/"
+  },
+  "authors": [
+    {
+      "name": "Robert Jamróz",
+      "email": "rockfade@gmail.com"
+    }
+  ],
+  "require": {
+    "monolog/monolog": "^3.10"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0",
+    "squizlabs/php_codesniffer": "^4.0"
+  }
+}
